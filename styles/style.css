@@ -61,7 +61,7 @@ h3 {
 }
 
 .yellowFont {
-  color: #FFAD12;
+  color: #FFAD12 !important;
 }
 
 .textJustify {
@@ -115,6 +115,17 @@ h3 {
   box-shadow: inset 0px -3px 3px rgba(128, 128, 128, 0.2);
 }
 
+.dlCv {
+  position: absolute;
+  top: 15vh;
+  right: 10%;
+  text-align: right;
+}
+
+.imgDlCv {
+  width: 30%;
+}
+
 /*************************************************************************** JS *********************************************************************/
 .animation {
   position: absolute;
@@ -142,11 +153,11 @@ h3 {
 }
 .menuResp {
   position: absolute;
-  top: 10%;
+  top: 10vh;
   left: -100%;
   width: 100%;
-  height: 90%;
-  background-image: url("../img/bgColor.png");
+  height: 90vh;
+  background-color: whitesmoke;
   transition: ease-out 0.8s;
   z-index: 10;
 }
@@ -176,6 +187,11 @@ h3 {
   overflow: hidden;
 }
 
+.burger {
+  position: relative;
+  z-index: 2000;
+}
+
 /*************************************************************************** template sections *********************************************************************/
 .indexTitles {
   text-align: center;
@@ -194,17 +210,11 @@ h3 {
 }
 
 .bgColor {
-  background-image: url("../img/bgColor.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 .bgColor2 {
-  background-image: url("../img/bgColor2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: white;
 }
 
 .subTitle {
@@ -273,6 +283,15 @@ h3 {
   background-color: rgba(255, 173, 18, 0.3) !important;
 }
 
+.mentionsLegales {
+  margin: 10% 0;
+}
+
+.mentionsLegales h2,
+.mentionsLegales h3 {
+  margin: 2% 0;
+}
+
 /*************************************************************************** Section Portfolio *********************************************************************/
 .portfolio {
   width: 90%;
@@ -339,6 +358,41 @@ h3 {
 
 .backHaut {
   color: #FFAD12 !important;
+}
+
+.navHeaderPortfolio ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.navHeaderPortfolio ul li a {
+  color: black;
+  transition: 0.5s ease-in;
+}
+
+.navHeaderPortfolio {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: center;
+  box-shadow: inset 0px -3px 3px rgba(128, 128, 128, 0.2);
+}
+
+.portfolioTitle {
+  font-size: 3rem;
+  margin-top: 5%;
+}
+
+.portfolioTitles {
+  margin-bottom: 5%;
+}
+
+.sizeImgPort {
+  width: 70%;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -518,6 +572,14 @@ h3 {
   .autoText {
     font-size: 4.5rem;
   }
+
+  .screen {
+    height: auto;
+  }
+
+  .container {
+    margin: 10% 0;
+  }
 }
 @media only screen and (min-width: 750px) and (max-width: 979px) {
   /* For big tablets: */
@@ -578,6 +640,10 @@ h3 {
   }
 
   .navHeader ul li {
+    font-size: 1rem;
+  }
+
+  .navHeaderPortfolio ul li {
     font-size: 1rem;
   }
 
@@ -662,6 +728,15 @@ h3 {
   }
 
   .navHeader {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+  .navHeaderPortfolio ul li:not(:nth-child(3)) {
+    display: none;
+  }
+
+  .navHeaderPortfolio {
     justify-content: space-between;
     padding: 0 5%;
   }
@@ -773,6 +848,15 @@ h3 {
     padding: 0 5%;
   }
 
+  .navHeaderPortfolio ul li:not(:nth-child(3)) {
+    display: none;
+  }
+
+  .navHeaderPortfolio {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
   .autoText {
     font-size: 2rem;
   }
@@ -821,39 +905,48 @@ h3 {
     padding: 2% 0;
   }
 }
-.navHeaderPortfolio ul {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
+@media (orientation: landscape) and (min-width: 750px) and (max-width: 979px) {
+  .navHeader {
+    height: 18vh;
+  }
 
-.navHeaderPortfolio ul li a {
-  color: black;
-  transition: 0.5s ease-in;
-}
+  .bgImage {
+    height: 82vh;
+  }
 
-.navHeaderPortfolio {
-  display: flex;
-  align-items: center;
-  height: 10vh;
-  justify-content: center;
-  box-shadow: inset 0px -3px 3px rgba(128, 128, 128, 0.2);
+  .navHeaderPortfolio {
+    height: 18vh;
+  }
 }
+@media (orientation: landscape) and (min-width: 520px) and (max-width: 749px) {
+  .navHeader {
+    height: 18vh;
+  }
 
-.portfolioTitle {
-  font-size: 3rem;
-  margin-top: 5%;
+  .bgImage {
+    height: 82vh;
+  }
+
+  .navHeaderPortfolio {
+    height: 18vh;
+  }
 }
+@media (orientation: landscape) and (min-width: 260px) and (max-width: 519px) {
+  .navHeader {
+    height: 18vh;
+  }
 
-.portfolioTitles {
-  margin-bottom: 5%;
-}
+  .navHeaderPortfolio {
+    height: 18vh;
+  }
 
-.sizeImgPort {
-  width: 70%;
+  .bgImage {
+    height: 82vh;
+  }
+
+  .navHeaderPortfolio {
+    height: 18vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -72,6 +72,14 @@
   .autoText {
     font-size: 4.5rem;;
   }
+
+  .screen {
+    height: auto;
+  }
+
+  .container {
+    margin: 10% 0;
+  }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 979px) {
@@ -98,6 +106,10 @@
   }
 
   .navHeader ul li {
+    font-size: 1rem;
+  }
+
+  .navHeaderPortfolio ul li {
     font-size: 1rem;
   }
 
@@ -148,6 +160,15 @@
   }
 
   .navHeader {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+  .navHeaderPortfolio ul li:not(:nth-child(3)) {
+    display: none;
+  }
+
+  .navHeaderPortfolio {
     justify-content: space-between;
     padding: 0 5%;
   }
@@ -225,6 +246,15 @@
     padding: 0 5%;
   }
 
+  .navHeaderPortfolio ul li:not(:nth-child(3)) {
+    display: none;
+  }
+
+  .navHeaderPortfolio {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  
   .autoText {
     font-size: 2rem;
   }
@@ -271,5 +301,51 @@
   .navFooter {
     flex-wrap: wrap;
     padding: 2% 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 750px) and (max-width: 979px) {
+  .navHeader {
+    height: 18vh;
+  }
+
+  .bgImage {
+    height: 82vh;
+  }
+
+  .navHeaderPortfolio {
+    height: 18vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 520px) and (max-width: 749px) {
+  .navHeader {
+    height: 18vh;
+  }
+
+  .bgImage {
+    height: 82vh;
+  }
+
+  .navHeaderPortfolio {
+    height: 18vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 260px) and (max-width: 519px) {
+  .navHeader {
+    height: 18vh;
+  }
+
+  .navHeaderPortfolio {
+    height: 18vh;
+  }
+
+  .bgImage {
+    height: 82vh;
+  }
+
+  .navHeaderPortfolio {
+    height: 18vh;
   }
 }
