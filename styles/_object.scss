@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "raleway";
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+
+}
+
+@font-face {
+  font-family: "ubuntu";
+  src: url('../fonts/Ubuntu-Medium.ttf');
+}
+
+.imgResp {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.displayFlexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.displayFlexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+}
+
+.yellowHover {
+  color: $color1!important;
+}
+
+.yellowFont {
+  color: $color1;
+}
+
+.textJustify {
+  text-align: justify;
+}
+
+.itemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+.screen {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}

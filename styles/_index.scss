@@ -1,0 +1,258 @@
+/*************************************************************************** Header *********************************************************************/
+.bgImage {
+    background-image: url(../img/motif2.png);
+    background-repeat: repeat;
+    background-size: cover;
+    height: calc(90vh - 1px);
+}
+
+.navHeader ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.navHeader ul li a {
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+.navHeader {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -3px 3px rgba(grey, $alpha: 0.2);
+}
+
+/*************************************************************************** JS *********************************************************************/
+.animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.autoText {
+    border-right: 3px solid $color1;
+    font-size: 5rem;
+    animation: blink step-end infinite 0.75s ;
+    text-transform: initial;
+    font-family: "ubuntu";
+    z-index: 5;
+}
+
+@keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: $color1;
+    }
+}
+
+.menuResp {
+    position: absolute;
+    top: 10%;
+    left: -100%;
+    width: 100%;
+    height: 90%;
+    background-image: url('../img/bgColor.png');
+    transition: ease-out 0.8s;
+    z-index: 10;
+}
+
+.menuResp ul li {
+    font-size: 2rem;
+    margin: 5% 0;
+    margin-left: 5%;
+}
+
+.menuResp ul li a {
+    color: black;
+    transition: 0.5 ease-in;
+}
+
+.menuResp ul li a:hover {
+    color: $color1;
+    transition: 0.5 ease-out;
+}
+
+.menuResp.active {
+    left: 0%;
+    transition: 0.8s ease-in;
+}
+
+.body.hidden {
+    overflow: hidden;
+}
+
+
+
+/*************************************************************************** template sections *********************************************************************/
+.indexTitles {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+}
+
+.indexInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.alignImg {
+    text-align: center;
+}
+
+.bgColor {
+    background-image: url('../img/bgColor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgColor2 {
+    background-image: url('../img/bgColor2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.subTitle {
+    font-size: 2rem;
+}
+
+.btn a {
+    color: black;
+}
+
+.btnAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgba($color: $color1, $alpha: 0.5);
+    border-radius: 5px;
+    text-align: center;
+    width: 220px;
+    padding: 2% 2%;
+    margin: 3% 0;
+    transition: 0.5s ease-out
+}
+
+.btn:hover {
+    transition: 0.5s ease-in;
+    background-color: $color1;
+}
+
+.navHeader ul li a:hover {
+    transition: 0.5s ease-out;
+    color: $color1;
+}
+
+.sideNavRel1,
+.sideNavRel2,
+.sideNavRel3,
+.sideNavRel4 {
+    position: relative
+}
+
+.sideNav1,
+.sideNav2,
+.sideNav3,
+.sideNav4 {
+    position: absolute;
+    top: 50vh;
+    right: 2%;
+    transform: translate(0, -50%);;
+}
+
+.sideNav1 p,
+.sideNav2 p,
+.sideNav3 p,
+.sideNav4 p{
+    background-color: rgba($color: black, $alpha: 0.3);
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.where {
+    background-color: rgba($color: $color1, $alpha: 0.3)!important;
+}
+
+/*************************************************************************** Section Portfolio *********************************************************************/
+.portfolio {
+    width: 90%;
+}
+
+/*************************************************************************** Section CV *********************************************************************/
+.blur {
+    filter: blur(1px);
+}
+
+.cv {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    width: 70%;
+}
+
+/*************************************************************************** Section contact *********************************************************************/
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.adress p,
+.tel,
+.mail {
+    text-align: center;
+    margin: 5%;
+}
+
+.profilRelative {
+    position: relative;
+}
+
+.profil {
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.tel,
+.mail {
+    color: black;
+}
+
+/*************************************************************************** Footer *********************************************************************/
+.footer {
+    background-color: black;
+}
+
+.navFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.navFooter ul li a {
+    color: white;
+}
+
+.backHaut {
+    color: $color1!important;
+}
