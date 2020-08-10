@@ -20,6 +20,10 @@
   .menuResp {
     display: none;
   }
+
+  .autoText {
+    font-size: 8rem;
+  }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
@@ -80,6 +84,10 @@
   .container {
     margin: 10% 0;
   }
+
+  .dlCv {
+    right: 5%;
+  }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 979px) {
@@ -118,7 +126,7 @@
   }
 
   .autoText {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .container {
@@ -137,6 +145,11 @@
 
   .indexInfos p {
     margin: 2% 0;
+  }
+
+  .dlCv {
+    top: 15vh;
+    width: 40%;
   }
 }
 
@@ -174,7 +187,7 @@
   }
 
   .autoText {
-    font-size: 1.8rem;
+    font-size: 4rem;
   }
 
   .screen {
@@ -219,6 +232,11 @@
   .navFooter {
     flex-wrap: wrap;
     padding: 2% 0;
+  }
+
+  .dlCv {
+    top: 15vh;
+    width: 40%;
   }
 }
 
@@ -301,6 +319,11 @@
   .navFooter {
     flex-wrap: wrap;
     padding: 2% 0;
+  }
+
+  .dlCv {
+    top: 15vh;
+    width: 50%;
   }
 }
 

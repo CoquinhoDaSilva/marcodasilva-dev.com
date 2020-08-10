@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "raleway";
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -119,11 +120,7 @@ h3 {
   position: absolute;
   top: 15vh;
   right: 10%;
-  text-align: right;
-}
-
-.imgDlCv {
-  width: 30%;
+  width: 20%;
 }
 
 /*************************************************************************** JS *********************************************************************/
@@ -210,7 +207,7 @@ h3 {
 }
 
 .bgColor {
-  background-color: rgba(128, 128, 128, 0.1);
+  background-color: rgba(245, 245, 245, 0.3);
 }
 
 .bgColor2 {
@@ -452,6 +449,10 @@ h3 {
   .menuResp {
     display: none;
   }
+
+  .autoText {
+    font-size: 8rem;
+  }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
   /* For desktop: */
@@ -580,6 +581,10 @@ h3 {
   .container {
     margin: 10% 0;
   }
+
+  .dlCv {
+    right: 5%;
+  }
 }
 @media only screen and (min-width: 750px) and (max-width: 979px) {
   /* For big tablets: */
@@ -652,7 +657,7 @@ h3 {
   }
 
   .autoText {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .container {
@@ -671,6 +676,11 @@ h3 {
 
   .indexInfos p {
     margin: 2% 0;
+  }
+
+  .dlCv {
+    top: 15vh;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 520px) and (max-width: 749px) {
@@ -742,7 +752,7 @@ h3 {
   }
 
   .autoText {
-    font-size: 1.8rem;
+    font-size: 4rem;
   }
 
   .screen {
@@ -787,6 +797,11 @@ h3 {
   .navFooter {
     flex-wrap: wrap;
     padding: 2% 0;
+  }
+
+  .dlCv {
+    top: 15vh;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 260px) and (max-width: 519px) {
@@ -903,6 +918,11 @@ h3 {
   .navFooter {
     flex-wrap: wrap;
     padding: 2% 0;
+  }
+
+  .dlCv {
+    top: 15vh;
+    width: 50%;
   }
 }
 @media (orientation: landscape) and (min-width: 750px) and (max-width: 979px) {
