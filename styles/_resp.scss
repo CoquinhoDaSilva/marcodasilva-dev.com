@@ -24,6 +24,10 @@
   .autoText {
     font-size: 8rem;
   }
+
+  .menuRespOut {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
@@ -46,6 +50,10 @@
   }
 
   .menuResp {
+    display: none;
+  }
+
+  .menuRespOut {
     display: none;
   }
 }
@@ -87,6 +95,10 @@
 
   .dlCv {
     right: 5%;
+  }
+
+  .menuRespOut {
+    display: none;
   }
 }
 
@@ -150,6 +162,10 @@
   .dlCv {
     top: 15vh;
     width: 40%;
+  }
+
+  .menuRespOut {
+    display: none;
   }
 }
 
@@ -238,6 +254,28 @@
     top: 15vh;
     width: 40%;
   }
+
+  .menuResp ul li {
+    font-size: 2rem;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease-in;
+  }
+
+  .revealTwo {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease-in;
+  }
+
+  .reveal-visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: 1s ease-out;
+  }
 }
 
 @media only screen and (min-width: 260px) and (max-width: 519px) {
@@ -324,6 +362,24 @@
   .dlCv {
     top: 15vh;
     width: 50%;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease-in;
+  }
+
+  .revealTwo {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease-in;
+  }
+
+  .reveal-visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: 1s ease-out;
   }
 }
 
