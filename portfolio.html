@@ -7,6 +7,7 @@
     <meta property="og:image" content="http://www.marcodasilva-dev.com/img/logo.png" />
     <link rel="icon" type="image/png" href="img/logo.png" />
     <link type="text/css" href="styles/style.css" rel="stylesheet">
+    <link type="text/css" href="styles/tictactoe.css" rel="stylesheet">
     <title>Projets</title>
 </head>
 <body class="body">
@@ -124,9 +125,14 @@
                     <p class="reveal">Recherche de la documentation</p>
                     <p class="reveal"><span class="yellowFont">Complétion du tuto</span> de la documentation</p>
                     <p class="reveal"><span class="yellowFont">Création d'un jeu</span> Morpion</p>
+                    <p class="reveal">Import du code React sur le HTML</p>
                 </div>
-                <div class="revealTwo alignImg bDesktop5 desktop5 lDesktop5 bTablet5 tablet12 phone12">
-                    <img class="imgResp sizeImgPort" src="img/morpion.png" alt="portrait de marco da silva">
+                <div class="revealTwo bDesktop5 desktop5 lDesktop5 bTablet5 tablet12 phone12">
+                    <div id="tictactoe">
+                        
+                    </div>
+                </div>
+
                 </div>
             </div>
         </div>
@@ -210,5 +216,13 @@
         
     </div>
     <script type="text/javascript" src="scripts/legal.js"></script>
-</body>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="scripts/tictactoe.js"></script>
+    <script type="text/babel">
+        ReactDOM.render(<Game />, document.querySelector("#tictactoe"));
+    </script>
+    
 </html>

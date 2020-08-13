@@ -1,0 +1,124 @@
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #FFAD12;
+  border: 1px solid black;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 5vw;
+  height: 5vw;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 5vw;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 10px;
+}
+
+.game-info button {
+  background-color: rgb(255, 214, 136);
+  color: black;
+  border-radius: 5px;
+  padding: 0 2%;
+}
+
+.game-board {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-info {
+  width: 40%;
+}
+
+@media only screen and (min-width: 520px) and (max-width: 749px) {
+  /* For little tablets: */
+  .tablet1 {width: 8.33%;}
+  .tablet2 {width: 16.66%;}
+  .tablet3 {width: 25%;}
+  .tablet4 {width: 33.33%;}
+  .tablet5 {width: 41.66%;}
+  .tablet6 {width: 50%;}
+  .tablet7 {width: 58.33%;}
+  .tablet8 {width: 66.66%;}
+  .tablet9 {width: 75%;}
+  .tablet10 {width: 83.33%;}
+  .tablet11 {width: 91.66%;}
+  .tablet12 {width: 100%;}
+
+  .square {
+    height: 10vh;
+    width: 10vh;
+    line-height: 10vh;
+  }
+
+}
+
+
+@media only screen and (min-width: 260px) and (max-width: 519px) {
+  /* For mobile: */
+  .phone1 {width: 8.33%;}
+  .phone2 {width: 16.66%;}
+  .phone3 {width: 25%;}
+  .phone4 {width: 33.33%;}
+  .phone5 {width: 41.66%;}
+  .phone6 {width: 50%;}
+  .phone7 {width: 58.33%;}
+  .phone8 {width: 66.66%;}
+  .phone9 {width: 75%;}
+  .phone10 {width: 83.33%;}
+  .phone11 {width: 91.66%;}
+  .phone12 {width: 100%;}
+
+  .square {
+    height: 10vh;
+    width: 10vh;
+    line-height: 10vh;
+  }
+
+  .game-board {
+    width: 100%;
+  }
+
+  .game {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .game-info {
+    width: 100%;
+  }
+
+  .game-info div,
+  .game-info ol li {
+    text-align: center;
+  }
+}
